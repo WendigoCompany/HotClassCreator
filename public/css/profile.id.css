@@ -1,0 +1,36 @@
+select{
+    font-size: 1.5rem;
+}
+
+body table:nth-child(4) tr td:nth-child(1){
+    width: 5%;
+}
+
+body table:nth-child(4) tr td:nth-child(2){
+    width: 45%;
+}
+body table:nth-child(4) tr td:nth-child(3){
+    width: 45%;
+}
+
+
+#td1{
+    width: 100px;
+}
+
+body table:nth-child(4) tr:nth-child(2) textarea{
+    height: 200px;
+}
+body table:nth-child(4) tr:nth-child(3) textarea{
+    height:350px;
+}
+
+
+
+/* body table:nth-child(3) tr td:nth-child(4) textarea{
+    height: 200px;
+}
+
+body table:nth-child(3) tr td:nth-child(5) textarea{
+    height:350px;
+} */

@@ -9,7 +9,7 @@ button{
 }
 
 
-h1,h2,h3,h4,h5,label,input{
+h1,h2,h3,h4,h5,label,input, textarea{
     color: #ffa41d;
     
 }
@@ -24,7 +24,7 @@ h1,h2,h3,h4,h5,label,input{
     background-color: #ffa41d;
     color: black;
 }
-input{
+input, textarea{
     width: 100%;
     font-size: 1.8rem;
     background-color: transparent;

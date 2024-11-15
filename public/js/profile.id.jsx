@@ -110,12 +110,13 @@ const show_images = (gallery) => {
             </tbody>
         </table>
         
-        
-<table>
+       
+        <table>
     <tbody>
+
     <tr>
     <td>  <label>${"MAIN_IMG"}</label></td>
-    <td>
+    <td id="td1">
     <select name=""  value="${data[0].main_img}" id="">
     ${(() => {
                 const max = data[0].gallery.length;
@@ -138,10 +139,16 @@ const show_images = (gallery) => {
 
        <tr>
            <td>  <label>${"MAIN_IMG"}</label></td>
-            <td>
+           <td id="td2">
                 ${select_creator(data[0])}
             </td>
         </tr>
+</table>
+    </tbody>
+
+<table>
+    <tbody>
+
 
       <tr>
                     <td>  <label>${"TITLE"}</label></td>
@@ -153,8 +160,8 @@ const show_images = (gallery) => {
 
       <tr>
                     <td>  <label>${"PREV"}</label></td>
-                    <td> <input type="text" value="${data[0].prev}" name="en_prev"/></td>
-                    <td> <input type="text" value="${data[1].prev}" name="sp_prev"/></td>
+                  <td>  <textarea name="en_prev">${data[0].prev}</textarea ></td>
+                   <td> <textarea name="sp_prev">${data[1].prev}</textarea ></td>
 
                 </tr>
 
