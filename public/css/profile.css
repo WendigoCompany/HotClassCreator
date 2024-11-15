@@ -1,0 +1,63 @@
+@import url('./main.css');
+
+table{
+    width: 95%;
+}
+
+tr{
+    width: 100%;
+}
+
+tr td{
+    background-color: #cccccc5b;
+    border: 2px solid #ffa41d;
+}
+
+tr td:nth-child(1){
+    width: 10%;
+}
+
+
+tr td:nth-child(2){
+    width: 50%;
+}
+tr td:nth-child(3){
+    width: 20%;
+    text-align: center;
+}
+
+tr td:nth-child(4){
+    width: 20%;
+    text-align: center;
+}
+
+h3, button{
+    font-size: 2rem;
+}
+
+img{
+    height: 100px;
+    
+}
+
+/* Contenedor principal de los divs */
+table {
+    border-collapse: collapse; /* Para que no haya espacio entre celdas */
+}
+
+/* El contenedor de la imagen y el label debe estar alineado en una fila */
+.table-im {
+    display: inline-flex;       /* Usamos inline-flex para que los divs se alineen en fila */
+    flex-direction: column;     /* Los elementos dentro de cada div deben estar en columna (imagen arriba, label abajo) */
+    align-items: center;        /* Centra la imagen y el label horizontalmente dentro del div */
+    margin: 10px;               /* Espacio entre cada div */
+    text-align: center;         /* Opcional: para centrar el texto del label */
+}
+
+    
+
+/* Ajustamos el label */
+.table-im label {
+    margin-top: 5px;            /* Espacio entre la imagen y el label */
+    font-size: 14px;            /* Tamaño de la fuente del label */
+}

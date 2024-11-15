@@ -1,0 +1,19 @@
+@import url('./main.css');
+
+table{
+    width: 95%;
+}
+
+tr{
+    width: 100%;
+}
+
+td{
+    width: 50%;
+}
+
+button{
+    width: 100%;
+    padding: 5% 0%;
+    margin: 2%;
+}

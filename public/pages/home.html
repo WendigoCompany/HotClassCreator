@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/axios.js"></script>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+    <div>
+
+
+        <table>
+            <tbody>
+                <tr>
+                    <td><button class="btn">PROFILES</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn">QUESTIONS</button></td>
+                    <td><button class="btn">ANSWERS</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn">BACKGROUNDS</button></td>
+                    <td><button class="btn">SPRITES</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn">POSES</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+    </div>
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/base.jsx"></script>
+    <script>
+        document.getElementById("root").innerHTML = basic;
+        const urls = ["/profiles", "/quest", "/answ", "/backg", "/spr", "/poses"];
+        const elements = document.querySelectorAll("button");
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].onclick = () => {
+                window.location.href = urls[i]
+            };
+
+
+        }
+    </script>
+
+</body>
+
+</html>
